@@ -34,7 +34,6 @@ def part2():
         redMax = 0 
         greenMax = 0
         line = re.split(r"Game (\d+): (.*)", line.strip())
-        id = line[1]
         gameSets = line[2].split(';')
         for gameSet in gameSets:
             blue = re.search(r"(\d+) blue", gameSet)
